@@ -1,0 +1,11 @@
+# Configuration for Smithery.ai deployment
+# https://smithery.ai/server/@nousresearch/web-scraper-mcp
+
+startCommand:
+  type: stdio
+  configSchema:
+    # no user configuration required
+    type: object
+    properties: {}
+  commandFunction: |
+    (config) => ({ command: 'python', args: ['server.py'] })
